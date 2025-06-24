@@ -31,7 +31,7 @@ Disallow: /morse-code-translator/gulpfile.js
 Disallow: /morse-code-translator/Gruntfile.js
 
 # Allow important files for SEO
-Allow: /morse-code-translator/sitemap.xml
+Allow: /sitemap.xml
 Allow: /robots.txt
 Allow: /morse-code-translator/favicon.ico
 
