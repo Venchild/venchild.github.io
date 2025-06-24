@@ -1,7 +1,6 @@
 User-agent: *
 Allow: /
 
-# Allow all major search engines to crawl everything
 User-agent: Googlebot
 Allow: /
 
@@ -20,23 +19,18 @@ Allow: /
 User-agent: YandexBot
 Allow: /
 
-# Disallow crawling of any potential admin or config files
-Disallow: /morse-code-translator/.git/
-Disallow: /morse-code-translator/node_modules/
-Disallow: /morse-code-translator/.vscode/
-Disallow: /morse-code-translator/.idea/
-Disallow: /morse-code-translator/package*.json
-Disallow: /morse-code-translator/webpack*.js
-Disallow: /morse-code-translator/gulpfile.js
-Disallow: /morse-code-translator/Gruntfile.js
+Disallow: /.git/
+Disallow: /node_modules/
+Disallow: /.vscode/
+Disallow: /.idea/
+Disallow: /package*.json
+Disallow: /webpack*.js
+Disallow: /gulpfile.js
+Disallow: /Gruntfile.js
+Disallow: /LICENSE # 라이선스 파일이 불필요하게 검색되는 것을 막을 수 있습니다.
 
-# Allow important files for SEO
 Allow: /sitemap.xml
 Allow: /robots.txt
-Allow: /morse-code-translator/favicon.ico
+Allow: /favicon.ico
 
-# Crawl-delay (optional, in seconds)
-Crawl-delay: 1
-
-# Sitemap location
-Sitemap: https://venchild.github.io/morse-code-translator/sitemap.xml
+Sitemap: https://venchild.github.io/sitemap.xml
